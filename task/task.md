@@ -2,11 +2,10 @@
 
 ##### 技术
 
+- [ ] **C++ & C & OS & CPU**    **电子电路实训项目 如CPU设计 和 嘉立创饭卡 和单片机**  **armoury create**
+- [ ] [前后端web开发](https://zhuanlan.zhihu.com/p/164701269)    管理系统项目   Android/鸿蒙开发
 - [ ] python基础与爬虫
-- [ ] C++
-- [ ] [前后端web开发](https://zhuanlan.zhihu.com/p/164701269)
-- [ ] 3D建模基础
-- [ ] 英语水平
+- [ ] 英语
 - [ ] 竹笛
 - [ ] [做饭](https://github.com/Anduin2017/HowToCook)
 
@@ -14,15 +13,10 @@
 
 ##### project
 
-- [ ] 小游戏 -如[坦克大战](https://www.bilibili.com/video/BV15f4y1a75u?p=5&spm_id_from=pageDriver)
+- [ ] 小游戏 -[坦克大战](https://www.bilibili.com/video/BV15f4y1a75u?p=5&spm_id_from=pageDriver)
 - [ ] 自动化办公模板
-- [ ] 电子电路实训项目 如CPU设计 和 嘉立创饭卡 和单片机
-- [ ] OpenGL游戏设计项目
-- [ ] armoury create
-- [ ] 管理系统项目
+- [ ] OpenGL游戏设计
 - [ ] CSP
-- [ ] Android开发
-
 
 
 ##### 考证

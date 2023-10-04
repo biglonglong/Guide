@@ -53,6 +53,6 @@ Email：[1522262926@qq.com](mailto:1522262926@qq.com)
 
 ## 备注
 
-> [task](task/task.md):部署到Github，备份在Baidu
+> [task](./task.md):部署到Github，备份在Baidu
 
 - [ ] 整理从数据挖掘到机器学习内容

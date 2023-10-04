@@ -1,1 +1,0 @@
-python main.py & python png-gif.py & pause

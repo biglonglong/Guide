@@ -17,7 +17,15 @@
 
 ## 实践
 
+- interview
 - [MathModel](https://github.com/biglonglong/MathModel)
+
+
+
+## 工具
+
+- [pptModel](https://pan.baidu.com/s/1mPTyGxeE8ybCbypOWA7z7g)：long
+- [AutoEnterScript](https://github.com/OutlierStar/AutoEnterScript)
 
 
 

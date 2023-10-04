@@ -54,5 +54,3 @@
 - [https://sanzo.top](https://sanzo.top/)
 - [(155条消息) Gene_INNOCENT的博客_CSDN博客-大学课程笔记（重要）,数据结构,基础算法及操作领域博主](https://gene-liu.blog.csdn.net/article/list/2)
 - [代码随想录](https://github.com/youngyangyang04)
-
-> ID有biglonglong的影子即可

@@ -8,6 +8,8 @@
 
 **website设计 github.io**
 
+- [千古前端图文教程](https://github.com/qianguyihao/Web)
+
 - [CS-Notes](https://github.com/CyC2018/CS-Notes)
 - [分类 | Doraemonzzz](http://doraemonzzz.com/categories/)
 - [FailBetter - 博客园 (cnblogs.com)](https://www.cnblogs.com/FailBetter/)

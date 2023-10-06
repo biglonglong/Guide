@@ -34,9 +34,6 @@
 | 编译原理       | [nudt - 编译原理](https://www.bilibili.com/video/BV1DJ411M7eV/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) | [Doraemonzzz - 编译原理](http://doraemonzzz.com/2020/09/27/国防科技大学 编译原理 第1讲 引论/) |                                                            |
 | 数模电路       |                                                              |                                                              | 《逻辑与计算机设计基础》                                   |
 | 计算机专业基础 | [王道 - 408](https://space.bilibili.com/95228778/channel/seriesdetail?sid=1885571) |                                                              | 《王道408考研复习指导》                                    |
-| 机器学习       | [黑马程序员 - 入门机器学习](https://www.bilibili.com/video/BV1nt411r7tj/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) |                                                              | 《人工智能：一种现代的方法》                               |
-| 计算机视觉     | [黑马程序员 - OpenCV入门](https://www.bilibili.com/video/BV1Fo4y1d7JL/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) | [BingqiangZhou - LearningOpenCV](https://github.com/BingqiangZhou/LearningOpenCV) |                                                            |
-| 深度学习       | [新加坡国立 - pytorch入门实战](https://www.bilibili.com/video/BV1uZ4y1C7gU/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19)/[新加坡国立 - tensorflow入门实战](https://www.bilibili.com/video/BV1hV4y1T73B/?spm_id_from=333.337.search-card.all.click) |                                                              |                                                            |
 
 ### AppliedTech
 
@@ -48,13 +45,12 @@
 | 爬虫       | [路飞学城IT - 爬虫初始深入](https://www.bilibili.com/video/BV1Yh411o7Sz/?p=3&vd_source=1a278fe24f00dd5c69f2875b5add5a19) |                                                              |                                                              |
 | HTML5+CSS3 | [黑马程序员 - h5c3](https://www.bilibili.com/video/BV14J4114768/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) | *biglonglong - 前端cheat sheet - building*                   | [《菜鸟教程HTML+CSS》](https://www.runoob.com/html/html-tutorial.html) |
 | ROS        | [Autolabor - ROS机器人入门](https://www.bilibili.com/video/BV1Ci4y1L7ZZ/) | [Autolabor - ROS理论与实践](http://www.autolabor.com.cn/book/ROSTutorials/?q=) | [Robotics R&D - 机器人研发分享](https://www.zhihu.com/column/c_1387574965043171328) |
+| 机器学习   | [黑马程序员 - 入门机器学习](https://www.bilibili.com/video/BV1nt411r7tj/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) |                                                              | 《人工智能：一种现代的方法》                                 |
+| 计算机视觉 | [黑马程序员 - OpenCV入门](https://www.bilibili.com/video/BV1Fo4y1d7JL/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) | [BingqiangZhou - LearningOpenCV](https://github.com/BingqiangZhou/LearningOpenCV) |                                                              |
+| 深度学习   | [新加坡国立 - pytorch入门实战](https://www.bilibili.com/video/BV1uZ4y1C7gU/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19)/[新加坡国立 - tensorflow入门实战](https://www.bilibili.com/video/BV1hV4y1T73B/?spm_id_from=333.337.search-card.all.click) |                                                              |                                                              |
 | OpenGL     | [EA小哥 - Welcome to OpenGL](https://www.bilibili.com/video/BV1MJ411u7Bc/?spm_id_from=333.999.0.0&vd_source=1a278fe24f00dd5c69f2875b5add5a19) | [learnopengl - LearnOpenGL CN](https://learnopengl-cn.github.io/intro/) |                                                              |
 | Blender    |                                                              | [Blender官方 - Blender4.0参考手册](https://docs.blender.org/manual/zh-hans/4.0/index.html) |                                                              |
 | GLFW       |                                                              | [GLFW官方 - GLFW指南](https://www.glfw.org/documentation.html) |                                                              |
-
-### [Algorithm](https://github.com/biglonglong/Algorithm)
-
-### [Paper](https://github.com/biglonglong/Paper)
 
 
 
@@ -65,14 +61,23 @@
 
 
 
-## Tools
-
-- [pptModel](https://pan.baidu.com/s/1mPTyGxeE8ybCbypOWA7z7g)
-- [AutoEnterScript](https://github.com/OutlierStar/AutoEnterScript)
-
-
-
 ## Discussion
+
+### [Algorithm](https://leetcode.cn/)
+
+> 题集(代码随想录)、算法讲解video、算法书
+
+- [编程规范](./Discussion/编程规范.md)
+- [常用库函数](./Discussion/常用库函数.md)
+- [机试技巧与STL](./Discussion/机试技巧与STL.md)
+- [算法模板](./Discussion/算法模板.md)
+- [时间复杂度](./Discussion/时间复杂度.md)
+
+### Paper
+
+- [paper阅读与汇报](./Discussion/paper阅读与汇报.md)
+- [NeRF2Real Sim2real Transfer of Vision-guided Bipedal Motion Skills using Neural Radiance Fields](./Discussion/papers/NeRF2Real.md)
+- [SkinTrack Using the Body as an Electrical Waveguide for Continuous Finger Tracking on the Skin](./Discussion//papers/SkinTrack.md)
 
 ### Git
 
@@ -90,6 +95,13 @@
 ### Autotools
 
 - [auto~py~脚本](./Discussion/auto-python脚本.md)
+
+
+
+## Tools
+
+- [pptModel](https://pan.baidu.com/s/1mPTyGxeE8ybCbypOWA7z7g)
+- [AutoEnterScript](https://github.com/OutlierStar/AutoEnterScript)
 
 
 
@@ -119,5 +131,21 @@
 
 ## Marks
 
-- [task](./task.md) making
-- [content](#Content) review
+- Breakfast first
+- English memorizing：words、videos、articles
+- [Algorithm](#Algorithm) coding
+- Others doing：exercitation、CV_REFERENCE
+- [AppliedTech](#AppliedTech) reviewing：python、C++
+- [Paper](#Paper) reading
+- Running
+
+> - [Discussion](#Discussion) writing
+> - [Projects](#Projects) updateing
+> - [task](./task.md) making
+
+```bash
+git add .
+git commit -m "update"
+git push
+```
+

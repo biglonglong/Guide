@@ -67,7 +67,7 @@
 
 ## Tools
 
-- [pptModel](https://pan.baidu.com/s/1mPTyGxeE8ybCbypOWA7z7g)：long
+- [pptModel](https://pan.baidu.com/s/1mPTyGxeE8ybCbypOWA7z7g)
 - [AutoEnterScript](https://github.com/OutlierStar/AutoEnterScript)
 
 

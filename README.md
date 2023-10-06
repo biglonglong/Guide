@@ -4,10 +4,14 @@
 
 ## 内容
 
->  希望以下内容可以帮到你:smiley:！知识是网状而非线性，需要你不断地跳过与反复知识点
+>  希望以下内容可以帮到你:smiley:！
+>
+>  1. 知识是网状而非线性，需要你不断地跳过与反复知识点
+>  2. 大数据时代资源丰富，重在理解、工程能力而非背诵、整理能力
 
-- [MathBasic](https://github.com/biglonglong/MathBasic)
-- [ComputerBasic](https://github.com/biglonglong/ComputerBasic)
+- [x] [MathBasic](https://github.com/biglonglong/MathBasic)
+- [x] [ComputerBasic](https://github.com/biglonglong/ComputerBasic)
+
 - [Git](https://github.com/biglonglong/Git)
 - [Algorithm](https://github.com/biglonglong/Algorithm)
 - [AppliedTech](https://github.com/biglonglong/AppliedTech)

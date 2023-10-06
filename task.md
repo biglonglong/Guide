@@ -1,3 +1,11 @@
+- CPU
+- 单片机
+- 前后端管理系统项目
+- 嘉立创项目–饭卡
+- C++游戏项目
+
+
+
 **website设计 github.io**
 
 - [CS-Notes](https://github.com/CyC2018/CS-Notes)

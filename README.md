@@ -39,9 +39,10 @@
 
 | 概述       | 教程                                                         | 笔记                                                         | 参考                                                         |
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| C++        | [黑马程序员 - C++从0到1](https://www.bilibili.com/video/BV1et411b73Z/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) |                                                              | 《Primer C++》                                               |
+| C++        | [黑马程序员 - C++从0到1](https://www.bilibili.com/video/BV1et411b73Z/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) | [applenob - Cpp_Primer_Practice](https://github.com/applenob/Cpp_Primer_Practice) | 《Primer C++》                                               |
 | Python     |                                                              | [AILearning - 初级Python](https://github.com/lizhi3158/AILearning/tree/b192639d2cc30e1fe70eec5d11e21848eaa06707/初级-Python) |                                                              |
 | Git        | [代码随想录 - Git入门](https://mp.weixin.qq.com/s/Q_O0ey4C9tryPZaZeJocbA)/[Jim - Git Immersion](https://gitimmersion.com/) | [rogerdudler - git guide](https://rogerdudler.github.io/git-guide/index.zh.html) | [《ProGit》](https://bingohuang.gitbooks.io/progit2/content/) |
+| Linux      | [黑马程序员 - Linux零基础快速入门](https://www.bilibili.com/video/BV1n84y1i7td/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) | [dunwu - linux-tutorial](https://dunwu.github.io/linux-tutorial/) |                                                              |
 | 爬虫       | [路飞学城IT - 爬虫初始深入](https://www.bilibili.com/video/BV1Yh411o7Sz/?p=3&vd_source=1a278fe24f00dd5c69f2875b5add5a19) |                                                              |                                                              |
 | HTML5+CSS3 | [黑马程序员 - h5c3](https://www.bilibili.com/video/BV14J4114768/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) | *biglonglong - 前端cheat sheet - building*                   | [《菜鸟教程HTML+CSS》](https://www.runoob.com/html/html-tutorial.html) |
 | ROS        | [Autolabor - ROS机器人入门](https://www.bilibili.com/video/BV1Ci4y1L7ZZ/) | [Autolabor - ROS理论与实践](http://www.autolabor.com.cn/book/ROSTutorials/?q=) | [Robotics R&D - 机器人研发分享](https://www.zhihu.com/column/c_1387574965043171328) |
@@ -96,6 +97,10 @@
 
 - [auto~py~脚本](./Discussion/auto-python脚本.md)
 
+### Linux
+
+- [Linux系统使用入门](./Discussion/Linux系统使用入门.md)
+
 
 
 ## Tools
@@ -128,14 +133,15 @@
 
 
 
-
 ## Marks
+
+> 多记、多翻、少整理
 
 - Breakfast first
 - English memorizing：words、videos、articles
 - [Algorithm](#Algorithm) coding
-- Others doing：exercitation、CV_REFERENCE
-- [AppliedTech](#AppliedTech) reviewing：python、C++
+- Others doing：exercitation
+- [AppliedTech](#AppliedTech) reviewing：基本寻路算法（路径规划）、ROS、计算机视觉与深度学习、OpenGL、相机成像和几何原理、《视觉SLAM十四讲》、《概率机器人》、《机器人学中的状态估计》、《计算机视觉中的多视图几何》（python、C++、Linux基础、）
 - [Paper](#Paper) reading
 - Running
 

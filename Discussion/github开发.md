@@ -103,7 +103,7 @@ cd demo
 
 - Authority：除仓库owner，要想让其他成员拥有仓库上传权限，需将其添加到项目成员目录中，否则只能进行**Pull Request**：
   - Fork：从原作者仓库fork，建一个自己的分支仓库
-  - Clone：将自己的分支仓库clone到本地开发并push
+  - Clone：将fork的仓库clone到本地dev分支开发并push
   - Pull request：Github服务端显示修改并产生Pull request链接，Pull request并注明修改内容与冲突关系，与原作者在该Pull request下进行Comment
   - Merge request：等待原仓库的作者查看和决定是否接受修改，原作者与fork成员Comment后点击Merge request即可
 
@@ -228,10 +228,52 @@ git push -f origin main  # 强制覆盖远程仓库
 
 
 
-# 五、其他一些常用命令
+# 五、其他问题
 
-## 查看和修改远程仓库URL地址
+## 1.CRLF换行符
 
-查看仓库地址：`git remote -v`
+> 现象：（跨平台）工作空间commit项目时**Warning:LF will be replaced by CRLF**，再次clone后文件乱码
+>
+> 原因：换行主要与CR回车`\r`、LF换行`\n`相关，文件行尾的换行符在不同编辑器和不同平台下具有不同的表示：Linux和macOS使用LF换行，而Dos和Windows使用CR LF换行，在编辑器中体现为KEY `Enter`
 
-修改远程仓库地址：.git—>config—>[remote “origin”] (url=…)
+- 更改`git config --global|system|local`
+
+单独开发的程序员：
+
+```bash
+#提交检出均不转换
+$ git config --global core.autocrlf false
+```
+
+多人协作跨平台开发的window程序员：
+
+```bash
+#提交时转换为LF，检出时转换为CRLF
+$ git config --global core.autocrlf true
+```
+
+多人协作跨平台开发的Linux程序员：
+
+```bash
+#提交时转换为LF，检出时不转换
+$ git config --global core.autocrlf input
+```
+
+为了防止文换行符杂糅，设置检查：
+
+```bash
+#拒绝提交包含混合换行符的文件
+git config --global core.safecrlf true   
+#允许提交包含混合换行符的文件
+git config --global core.safecrlf false
+#提交包含混合换行符的文件时给出警告
+git config --global core.safecrlf warn
+```
+
+- 项目文件`.gitattributes`（最高优先级），文件内容格式为`支持*的文件作用域 属性...`，常用属性：
+
+1. text：标记为文本文件
+2. -text：标记为非文本文件
+3. text=auto：标记为文本文件并行尾规范化，默认将为新加入项目文件行尾设置为LF
+4. eol=crlf：行尾规范化，出库时转为CRLF，入库转为LF
+5. eol=lf：行尾规范化，入库转为LF，出库时不操作

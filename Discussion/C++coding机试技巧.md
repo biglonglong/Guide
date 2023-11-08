@@ -1,97 +1,131 @@
-# 机试技巧与STL
+# C++coding机试技巧
 
-[TOC]
 
-## vs2018 快捷键
+
+## 代码规范
+
+### 变量命名
+
+* **小驼峰命名法**：第一个单词首字母小写，其他单词首字母大写；例如 `int myAge;`
+* 大驼峰命名法：单词的首字母都大写；例如：``int MyAge;``
+* 下划线命名法：名称中的每一个逻辑断点都用一个下划线来标记；例如：`int my_age;`
+* 匈牙利命名法：变量名 = 属性 + 类型 + 对象描述；例如：`int iMyAge;`
+
+### 代码空格
+
+- [x] 操作符`=`左右空格
+
 ```
-CTRL + J                  列出成员 
-Ctrl+E,D                  格式化全部代码 
-Ctrl+K,F                  格式化选中的代码 
-CTRL + SHIFT + E          显示资源视图 
-F12                       转到定义 
-CTRL + F12                转到声明 
-CTRL + ALT + J            对象浏览 
-CTRL + ALT + F1           帮助目录 
-CTRL + F1                 动态帮助 
-CTRL + K, CTRL + C        注释选择的代码 
-CTRL + K, CTRL + U        取消对选择代码的注释 
-CTRL + U                  转小写 
-CTRL + SHIFT + U          转大写 
-F5                        运行调试 
-CTRL + F5                 运行不调试 
-F10                       跨过程序执行 
-F11                       单步逐句执行 
+i = i+1;
 ```
 
-## 头文件
+- [x] 分隔符（`,` 、`;`）后空格
 
-### 标准c库
 
-| 头文件 | 说明 | 头文件 | 说明 | 头文件 | 说明 |
-| ------ | ---- | ------ | ---- | ------ | ---- |
-|assert.h	|断言相关|	ctype.h	|字符类型判断	|errno.h	|标准错误机制|
-|float.h	|浮点限制|	limits.h	|整形限制	|locale.h	|本地化接口|
-|math.h	|数学函数|	setjmp.h	|非本地跳转	|signal.h	|信号相关|
-|stdarg.h	|可变参数处理|	stddef.h	|宏和类型定义	|stdio.h	|标准I/O|
-|stdlib.h	|标准工具库|	string.h|	字符串和内存处理|	time.h|	时间相关|
-
-### c++ STL
-
-**using namespace std;**
-
-| 头文件    | 说明     | 头文件 | 说明     | 头文件  | 说明         |
-| --------- | -------- | ------ | -------- | ------- | ------------ |
-| algorithm | 通用算法 | deque  | 双端队列 | vector  | 向量         |
-| iterator  | 迭代器   | stack  | 栈       | map     | 图（键值对） |
-| list      | 列表     | string | 字符串   | set     | 集合         |
-| queue     | 队列     | bitset | bit类 | numeric | 数值算法     |
-
-### 常用头
-
-```c++
-#include<cstdio>  
-#include<cstring>  
-#include<algorithm>  
-#include<iostream>  
-#include<string>  
-#include<vector>  
-#include<stack>  
-#include<bitset>  
-#include<cstdlib>  
-#include<cmath>  
-#include<set>  
-#include<list>  
-#include<deque>  
-#include<map>  
-#include<queue>
-using namespace std;
+```
+int i, j;
+for(int fastIndex=0; fastIndex<nums.size(); fastIndex++)
 ```
 
-## 常用宏定义
+- [x] 大括号和函数保持同一行，与控制语句（while，if，for）前空格
 
-```c++
+
+```
+while(n) {
+    n--;
+}
+```
+
+
+
+## 时间复杂度
+
+### 超时
+
+- 问题规模过大，考虑时间或者空间**复杂度更低的算法**
+- 机器、语言、编译器的强度
+- **循环嵌套**，如递归**栈溢出**，采用其他算法
+
+### 大O
+
+> 空间复杂度S(n)：一般不包括程序本身，仅考虑程序运行时占用**内存的大小**
+
+- **一般情况下**算法复杂度是关于问题规模n的运行单元数/内存空间f(n)的渐进
+
+- 大O中对f(n)的计算会**忽略低阶项和常数项**；但实际情况下，由于问题规模和忽略项的大小会存在很大的差异
+- O(1)常数阶 < O(logn)对数阶 < O(n)线性阶 < O(n^2)平方阶 < O(n^3)立方阶 < O(2^n)指数阶
+
+### 递归
+
+- 递归算法复杂度=递归的次数 * 每次递归中的操作次数/内存要求；一般可以通过树形结构计算
+- 注意传参形式，传值调用、指针调用、引用调用
+
+
+
+## 常用头
+
+### 头文件
+
+#### 标准c库
+
+| 头文件       | 说明         | 头文件           | 说明             | 头文件          | 说明         |
+| ------------ | ------------ | ---------------- | ---------------- | --------------- | ------------ |
+| assert.h     | 断言相关     | ctype.h          | 字符类型判断     | errno.h         | 标准错误机制 |
+| float.h      | 浮点限制     | limits.h         | 整形限制         | locale.h        | 本地化接口   |
+| math.h/cmath | 数学函数     | setjmp.h         | 非本地跳转       | signal.h        | 信号相关     |
+| stdarg.h     | 可变参数处理 | stddef.h         | 宏和类型定义     | stdio.h/cstdlib | 标准I/O      |
+| stdlib.h     | 标准工具库   | string.h/cstring | 字符串和内存处理 | time.h          | 时间相关     |
+| cstdio       | c标准IO      |                  |                  |                 |              |
+
+#### STL库
+
+> using namespace std;
+
+| 头文件    | 说明      | 头文件 | 说明          | 头文件  | 说明         |
+| --------- | --------- | ------ | ------------- | ------- | ------------ |
+| algorithm | 通用算法  | deque  | 双端队列      | vector  | 向量         |
+| iterator  | 迭代器    | stack  | 栈            | map     | 图（键值对） |
+| list      | 列表      | string | 字符串        | set     | 集合         |
+| queue     | 队列      | bitset | bit类         | numeric | 数值算法     |
+| iostream  | C++标准IO | bitset | C++标准位序列 |         |              |
+
+### 宏定义
+
+```C++
 //求最大值和最小值
 #define  MAX(x,y) (((x)>(y)) ? (x) : (y))
 #define  MIN(x,y) (((x) < (y)) ? (x) : (y))
+```
 
+```C++
 //取余
 #define  mod(x) ((x)%MOD)
+```
 
+```C++
 //for循环
 #define  FOR(i,f_start,f_end) for(int i=f_start;i<=f_end;++i) 
+```
 
+```C++
 //返回数组元素的个数
 #define  ARR_SIZE(a)  (sizeof((a))/sizeof((a[0])))
+```
 
+```C++
 //初始化数组
 #define MT(x,i) memset(x,i,sizeof(x))
 #define MEM(a,b) memset((a),(b),sizeof(a))
+```
 
+```C++
 //符号重定义
 #define LL long long
 #define ull unsigned long long
 #define pii pair<int,int>
+```
 
+```C++
 //常见常数
 #define PI acos(-1.0)
 #define eps 1e-12
@@ -103,105 +137,37 @@ const ll P = 92540646808111039LL;
 const ll maxn = 1e5 + 10, MOD = 1e9 + 7;
 const int Move[4][2] = {-1,0,1,0,0,1,0,-1};
 const int Move_[8][2] = {-1,-1,-1,0,-1,1,0,-1,0,1,1,-1,1,0,1,1};
-
 ```
 
-## 结构体
+### 函数
 
-### 定义
+#### atoi()
 
-```c++
-struct InitMember
-{
-    int first；
-    double second；
-    char* third；
-    float four;
-};
+```C++
+#include <stdlib.h>
+#include <cstring>
+int atoi(const char *str)
+//把参数 str 所指向的字符串转换为一个整数（类型为 int 型）,如果没有执行有效的转换，则返回零
+
+int num = atoi(<string>.c_str());
 ```
 
-### 初始化
 
-#### 方法一：定义时赋值
 
-```c++
-struct InitMember test = {-10,3.141590，"method one"，0.25}；
-```
-
-#### 方法二：定义后逐个赋值
-
-```c++
-struct InitMember test；
-
-test.first = -10;
-test.second = 3.141590;
-test.third = "method two";
-test.four = 0.25;
-```
-
-#### 方法三：定义时乱序赋值（C++风格）
-
-```c++
-struct InitMember test = {
-    second：3.141590,
-    third："method three",
-    first：-10,
-    four：0.25
-};
-```
-
-#### 方法四：构造函数
-
-```
-//定义图的定点
-typedef struct Vertex {
-    int id,inDegree,outDegree;
-    vector<int> connectors;    //存储节点的后续连接顶点编号
-    Vertex() : id(-1),inDegree(0),outDegree(0) {}
-    Vertex(int nid) : id(nid),inDegree(0),outDegree(0) {}
-} Vertex;
- 
-//定义Graph的邻接表表示
-typedef struct Graph {
-    vector<Vertex> vertexs;   //存储定点信息
-    int nVertexs;		      //计数：邻接数
-    bool isDAG;               //标志：是有向图吗
- 
-    Graph(int n, bool isDAG) : nVertexs(n), isDAG(isDAG) { vertexs.resize(n); }
-	Graph() : nVertexs(1), isDAG(1) { vertexs.resize(1); }
-	//向图中添加边
-    bool addEdge(int id1, int id2) {
-			...
-			...
-			...
-        return true;
-    }
-} Graph;
-
-Graph g(8, false);
-```
-
-### 运算符重载
-```c++
-typedef struct{int id;int h;} node;
-bool operator <(const node& a,const node & b){return (a.h)<(b.h);}
-```
-
-## c++new的使用
+## new堆区使用
 
 ### 常规
 
 ```c++
-int *x = new int;       //开辟一个存放整数的存储空间，返回一个指向该存储空间的地址(即指针)
-int *a = new int(100);  //开辟一个存放整数的空间，并指定该整数的初值为100，返回一个指向该存储空间的地址
-char *b = new char[10]; //开辟一个存放字符数组(包括10个元素)的空间，返回首元素的地址
-float *p=new float (3.14159);//开辟一个存放单精度数的空间，并指定该实数的初值为//3.14159，将返回的该空间的地址赋给指针变量p
+int *x = new int;       		//开辟一个存放整数的存储空间，返回一个指向该空间的地址(即指针)
+int *a = new int(100);  		//开辟一个存放整数的空间，指定初值为100，返回一个指向该空间的地址
+char *b = new char[10]; 		//开辟一个存放字符的10字符大小的数组空间，返回首元素的地址
 ```
 
 ### 动态申请列大小固定的二维数组
+
 ```c++
-//列值固定
-const int MAXCOL = 3;
+const int MAXCOL = 3;			//固定列值
 cin>>row;
 //申请一维数据并将其转成二维数组指针
 int *pp_arr = new int[nRow * MAXCOL];
@@ -213,7 +179,6 @@ int (*p)[MAXCOL] = (int(*)[MAXCOL])pp_arr;
 ### 动态申请大小不固定的二维数组
 
 ```c++
-
 cin>>row>>col;
 int **p = new int*[row];
 for (int i = 0; i < row; i ++)
@@ -221,6 +186,9 @@ for (int i = 0; i < row; i ++)
     p[i] = new int[col];
 }
 ```
+
+
+
 
 
 ## 常用STL
@@ -779,6 +747,9 @@ bt[pos].flip()  //  同上
 bt.to_ulong()   //  用 bt 中同样的二进制位返回一个 unsigned long 值
 os << bt        //  把 bt 中的位集输出到 os 流
 ```
+
+
+
 
 
 ## 图模板
@@ -1555,3 +1526,488 @@ int main()
     return 0;
 }
 ```
+
+
+
+
+
+
+
+
+
+## 编程模板
+
+### 逻辑规范
+
+- 默认输入是以1开头，这样有利于代码构建头节点（0）来解决一些问题需要特殊处理的问题
+- 循环不变定义（虚拟头节点）
+- 尝试而不是思考，cout debug
+- 不要觉得浪费空间而不使用 temp;
+- 在代码边界严格的时候，用++a，而不是a++
+- 数据溢出问题：1.使用合适的数据类型 2.改变计算方法，如乘法变除法
+
+
+
+> # 回溯
+>
+> 回溯其实只是**利用递归暴力遍历dfs**，其解决的问题都可以抽象为**树形结构**(函数参数、终止条件和单层搜索)
+>
+> - 当探索到某一步时，发现原先选择并不优，就**退回到那一步重新选择**
+>
+> - 回溯法解决的都是在集合中递归查找子集，**集合的大小就构成了树的宽度，递归的深度构成的树的深度**。
+>
+> ![image-20230905174537254](img/image-20230905174537254.png)
+>
+> 
+>
+> 
+>
+> # 分治与递归
+>
+> 分治与递归自上而下的分割问题，自下而上的整合结果，但仅考虑子问题之间的关系!
+>
+> 具有以下特点：
+>
+>      　 1) 该问题可以分解为若干个规模较小的相同问题，即该问题具有**最优子结构性质。**
+>           2) 该问题的规模**缩小**到一定的程度就可以**容易地解决**
+>                   　 3) 利用该问题分解出的子问题的解**可以合并**为该问题的解；
+>                        4) 该问题所分解出的**各个子问题是相互独立的**，即子问题之间不包含公共的子子问题。
+>
+> 
+>
+> 
+>
+> # 贪心
+>
+> 贪心法选择每一阶段的局部最优，从而达到全局最优；具有最优子结构性质：一个问题的最优解包含其子问题的最优解
+>
+> 
+>
+> 
+>
+> # 动态规划
+>
+> 动态规划拆分==子问题==，==记住==过往。一般来说可以用暴力递归，自顶向下的备忘录递归，自底向上的备忘录动态规划，后者可以减少重复计算。
+>
+> 动态规划有几个典型特征，**最优子结构：状态转移方程、边界 | 重叠不独立子问题**
+>
+> > 对比贪心？
+> >
+> > 贪心算法中作出的每步贪心决策都无法改变，因为贪心策略是由上一步的最优解推导下一步的最优解，而上一部之前的最优解则不作保留，贪心算法每一步的最优解一定包含上一步的最优解。
+> >
+> > 动态规划算法中全局最优解中一定包含某个局部最优解，但不一定包含前一个局部最优解，因此需要记录之前的所有最优解
+>
+> 
+>
+> 
+>
+> # 分支限界
+
+
+
+
+
+### 回溯
+
+#### 应用与模板
+
+
+
+### 分治与递归
+
+#### 应用与模板
+
+
+
+### 贪心
+
+#### 应用与模板
+
+
+
+### 动态规划
+
+#### 应用与模板
+
+
+
+### 分支限界
+
+#### 应用与模板
+
+
+
+
+
+### 其他模板
+
+#### 二分法
+
+##### 无重复插入
+
+```C++
+int binarySearch(vector<int>& nums, int target) {
+    int middle,left=0,right=nums.size()-1;
+    while(left<=right){
+        middle = left+(right-left)/2;
+        if(nums[middle]<target) left=middle+1 ;
+        else if(nums[middle]>target) right=middle-1;
+        else return middle;
+    }
+    return left/right+1;
+}
+```
+
+##### 区间查找
+
+```C++
+//使得区间在[left,right]区间内，单独探讨边界是否正常，注意while不包括left==right的情况以防死循环
+//利用二分法最终归于某个元素的核对这一性质
+int findLeft(vector<int>& nums, int target){
+    int middle,left=0,right=nums.size()-1;
+    while(left<right){
+        middle=(left+right)/2;
+        if(nums[middle]<target) left=middle+1;
+        else if(nums[middle]>target) right=middle-1;
+        else right=middle;
+    }
+    if(nums[left]==target) return left;
+    else return -1;
+}
+int findRight(vector<int>& nums, int target){
+    int middle,left=0,right=nums.size()-1;
+    while(left<right){
+        middle=(left+right)/2+(left+right)%2;
+        if(nums[middle]<target) left=middle+1;
+        else if(nums[middle]>target) right=middle-1;
+        else left=middle;
+    }
+    if(nums[right]==target) return right;
+    else return -1;
+}
+--------------------------------------merge--------------------------------------
+//lower为true分nums[mid]>=target和nums[mid]<target,为false分nums[mid]<=target和nums[mid]>target
+int binarySearch(vector<int>& nums,int target,bool lower){
+    int left=0,right=nums.size()-1, ans=nums.size();
+    while (left <= right){
+        int mid=(left+right)/2;
+        if (nums[mid]>target||(lower&&nums[mid]>=target)){
+            right=mid-1;
+            ans=mid;
+        }
+        else left=mid+1;        
+    }
+    return ans;
+}
+int leftIdx=binarySearch(nums,target,true);
+int rightIdx=binarySearch(nums,target,false) - 1;
+```
+
+
+
+#### 双指针
+
+##### 快慢指针
+
+```C++
+int slowFast(vector<int>& nums, int val) {
+    int slow=0;
+    for(int fast=0;fast<nums.size();fast++){
+        if(condition(nums[fast],val))
+            action(slow++,fast);
+    }
+    return slow;
+}
+```
+
+##### 双头指针
+
+```C++
+int leftRight(vector<int>& nums){
+    int left=0,right=nums.size()-1;
+    while(left<=right){
+        if(condition(left,right)) select(left++,right--);
+        else select(left++,right--);
+    }
+}
+```
+
+##### 滑动窗口
+
+```C++
+//先找到合法的窗口，再对窗口内进行优化
+int startEnd(int target, vector<int>& nums) {
+    int start=0;
+    int res=INT32_MAX;
+    for(int end=0;end<nums.size();end++){
+        while(check(start,end,target)){
+            for(start++)//for(start--)
+            	deal(res，end-start+1);
+        }
+    }
+    return res;
+}
+//unordered_map<char,int> ori,cnt合法检查与记录
+unordered_map <char, int> ori, cnt;
+bool check() {
+    for (const auto &p: ori) {
+        if (cnt[p.first] < p.second) {
+            return false;
+        }
+    }
+    return true;
+}
+for (const auto &c: t) {
+    ++ori[c];
+}
+if (ori.find(s[end]) != ori.end()) {
+    ++cnt[s[end]];
+}
+```
+
+
+
+#### 螺旋矩阵
+
+```C++
+vector<vector<int>> generateMatrix(int n) {
+    vector<vector<int>> res(n,vector<int>(n,0));
+    int x1=0,y1=0,x2=n-1,y2=n-1;
+    int num=1;
+    while(x1<x2&&y1<y2){
+        for(int i=y1;i<y2;i++) res[x1][i]=num++;
+        for(int i=x1;i<x2;i++) res[i][y2]=num++;
+        for(int i=y2;i>y1;i--) res[x2][i]=num++;
+        for(int i=x2;i>x1;i--) res[i][y1]=num++;
+        x1++;y1++;x2--;y2--;
+    }
+    if(x1==x2)
+        for(int i=y1;i<=y2;i++) res[x1][i]=num++;
+    else if(y1==y2)
+        for(int i=x1;i<=x2;i++) res[i][y1]=num++;
+    return res;
+}
+```
+
+
+
+#### 链表
+
+> 注意虚拟节点dummyHead
+
+##### 定义
+
+```C++
+//合法检查，执行操作，修改属性
+// 定义链表节点结构体
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+// 初始化链表  int _size = 0;
+LinkedNode* _dummyHead= new LinkedNode(0,head);
+LinkedNode* cur = _dummyHead->next;  //_dummyHead;
+while(index--){   //while(cur->next != nullptr)
+    cur = cur->next;
+}
+```
+
+##### 反转链表
+
+```C++
+//遍历
+ListNode* reverseList(ListNode* head) {
+    ListNode *tmp;
+    ListNode *curr=head;
+    ListNode *pre=NULL;
+    while(curr!=NULL){
+        tmp=curr->next;
+        curr->next=pre;
+        pre=curr;
+        curr=tmp;
+    }
+    return pre;
+}
+//递归：记录尾节点，逆向反转
+ListNode* reverseList(ListNode* head) {
+    if(head==NULL || head->next==NULL) return head;
+    ListNode *last=reverseList(head->next);
+    head->next->next=head;
+    head->next=NULL;
+    return last;
+}
+```
+
+
+
+#### 字符串
+
+##### 字符串反转
+
+```C++
+void reverse(vector<char>& s,int start,int end){
+    for(int i=start;i<=(start+end)/2;i++){
+        swap(s[i],s[end+start-i]);
+    }
+}
+----------------swap--------------------------------
+int temp = s[i];
+s[i] = s[j];
+s[j] = temp;
+
+a[i] = a[i] ^ a[j]; 
+a[j] = a[i] ^ a[j]; // a[j] = a[i] ^ a[j] ^ a[j] = a[i]
+a[i] = a[i] ^ a[j]; // a[i] = a[i] ^ a[j] ^ a[i] = a[j]
+
+a[i] = a[i] + a[j];
+a[j] = a[i] - a[j]; // a[j] = a[i] + a[j] - a[j]
+a[i] = a[i] - a[j]; // a[i] = a[i] + a[j] - a[i]
+```
+
+##### 朴素模式匹配
+
+```C++
+int i=0,m=mainString.size(),n=modelString.size();
+while(i+n<=m){
+    if(modelString.compare(m.substr(i,n))!=0) ++i;
+    else return i;
+}
+return 0;
+
+int i=0,j=0;
+while(i<m && j<n){
+    if(mainString[i]==modelString[j]){
+        ++i;
+        ++j;
+    }else{
+        j=1;
+        i-=j-2;
+    }
+    if(j>=n) return i-n;
+    else return 0;
+}
+```
+
+##### KMP
+
+```C++
+
+```
+
+
+
+#### 哈希表
+
+>  数组计数器、集合存在问题、无限循环讨论、字典
+
+| 集合               | 底层实现 | 是否有序 | 数值是否可以重复 | 能否更改数值 | 查询效率 | 增删效率 |
+| ------------------ | -------- | -------- | ---------------- | ------------ | -------- | -------- |
+| std::set           | 红黑树   | 有序     | 否               | 否           | O(log n) | O(log n) |
+| std::multiset      | 红黑树   | 有序     | 是               | 否           | O(logn)  | O(logn)  |
+| std::unordered_set | 哈希表   | 无序     | 否               | 否           | O(1)     | O(1)     |
+
+| 映射               | 底层实现 | 是否有序 | 数值是否可以重复 | 能否更改数值 | 查询效率 | 增删效率 |
+| ------------------ | -------- | -------- | ---------------- | ------------ | -------- | -------- |
+| std::map           | 红黑树   | key有序  | key不可重复      | key不可修改  | O(logn)  | O(logn)  |
+| std::multimap      | 红黑树   | key有序  | key可重复        | key不可修改  | O(log n) | O(log n) |
+| std::unordered_map | 哈希表   | key无序  | key不可重复      | key不可修改  | O(1)     | O(1)     |
+
+
+
+## 结构体
+
+### 定义
+
+```c++
+struct InitMember
+{
+    int first；
+    double second；
+    char* third；
+    float four;
+};
+```
+
+### 初始化
+
+#### 方法一：定义时赋值
+
+```c++
+struct InitMember test = {-10,3.141590，"method one"，0.25}；
+```
+
+#### 方法二：定义后逐个赋值
+
+```c++
+struct InitMember test；
+
+test.first = -10;
+test.second = 3.141590;
+test.third = "method two";
+test.four = 0.25;
+```
+
+#### 方法三：定义时乱序赋值（C++风格）
+
+```c++
+struct InitMember test = {
+    second：3.141590,
+    third："method three",
+    first：-10,
+    four：0.25
+};
+```
+
+#### 方法四：构造函数
+
+```
+//定义图的定点
+typedef struct Vertex {
+    int id,inDegree,outDegree;
+    vector<int> connectors;    //存储节点的后续连接顶点编号
+    Vertex() : id(-1),inDegree(0),outDegree(0) {}
+    Vertex(int nid) : id(nid),inDegree(0),outDegree(0) {}
+} Vertex;
+ 
+//定义Graph的邻接表表示
+typedef struct Graph {
+    vector<Vertex> vertexs;   //存储定点信息
+    int nVertexs;		      //计数：邻接数
+    bool isDAG;               //标志：是有向图吗
+ 
+    Graph(int n, bool isDAG) : nVertexs(n), isDAG(isDAG) { vertexs.resize(n); }
+	Graph() : nVertexs(1), isDAG(1) { vertexs.resize(1); }
+	//向图中添加边
+    bool addEdge(int id1, int id2) {
+			...
+			...
+			...
+        return true;
+    }
+} Graph;
+
+Graph g(8, false);
+```
+
+### 运算符重载
+
+```c++
+typedef struct{int id;int h;} node;
+bool operator <(const node& a,const node & b){return (a.h)<(b.h);}
+```
+
+
+
+
+
+
+
+## VScode快捷键
+
+```txt
+crtl + / 							# 注释
+```
+

@@ -26,3 +26,7 @@
 
 最后一定要参考师兄师姐在组内的论文汇报习惯！！！  [demo](./papers/demo.pptx)
 
+
+
+- [NeRF2Real Sim2real Transfer of Vision-guided Bipedal Motion Skills using Neural Radiance Fields](./papers/NeRF2Real.md)
+- [SkinTrack Using the Body as an Electrical Waveguide for Continuous Finger Tracking on the Skin](./papers/SkinTrack.md)

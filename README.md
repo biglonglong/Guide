@@ -41,6 +41,7 @@
 | 爬虫       | [路飞学城IT - 爬虫初始深入](https://www.bilibili.com/video/BV1Yh411o7Sz/?p=3&vd_source=1a278fe24f00dd5c69f2875b5add5a19) |                                                              |                                                              |
 | HTML5+CSS3 | [黑马程序员 - h5c3](https://www.bilibili.com/video/BV14J4114768/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) | *biglonglong(BaiduNetdisk) - 前端cheat sheet*                | [《菜鸟教程HTML+CSS》](https://www.runoob.com/html/html-tutorial.html) |
 | ROS        | [Autolabor - ROS机器人入门](https://www.bilibili.com/video/BV1Ci4y1L7ZZ/)/[wiki - roswiki](http://roswiki.autolabor.com.cn/cn.html) | [Autolabor - ROS理论与实践](http://www.autolabor.com.cn/book/ROSTutorials/?q=)/*biglonglong(BaiduNetdisk) - ROS1demo* | [Robotics R&D - 机器人研发分享](https://www.zhihu.com/column/c_1387574965043171328) |
+| 路径规划   |                                                              | [zhm-real - PathPlanning](https://github.com/zhm-real/PathPlanning) |                                                              |
 | 机器学习   | [黑马程序员 - 入门机器学习](https://www.bilibili.com/video/BV1nt411r7tj/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) |                                                              | 《人工智能：一种现代的方法》                                 |
 | 计算机视觉 | [黑马程序员 - OpenCV入门](https://www.bilibili.com/video/BV1Fo4y1d7JL/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19) | [BingqiangZhou - LearningOpenCV](https://github.com/BingqiangZhou/LearningOpenCV) |                                                              |
 | 深度学习   | [新加坡国立 - pytorch入门实战](https://www.bilibili.com/video/BV1uZ4y1C7gU/?spm_id_from=333.337.search-card.all.click&vd_source=1a278fe24f00dd5c69f2875b5add5a19)/[新加坡国立 - tensorflow入门实战](https://www.bilibili.com/video/BV1hV4y1T73B/?spm_id_from=333.337.search-card.all.click) |                                                              |                                                              |
@@ -73,6 +74,7 @@
 - AutoEnterScript自动打字
 - auto-py-to-exe可视化打包
 - Clash网络代理：一元机场、wenpblog、*hosts ping*
+- AI大模型：文心一言(Baidu - biglonglong1)、copilot/bingchat(Microsoft - longlongbig2023)、githubcopilot(github - biglonglong)、chatgpt(Chrome - 2long.big)
 
 
 
@@ -80,7 +82,7 @@
 
 - English memorizing：words、videos、articles
 - [Algorithm](#Algorithm) coding
-- Others doing：DriveMethodDiscussion、Exercitation:ROS|AutomationInstitute、GraduationProject:VLN&ContactTeacher、LJLDating&Chating&Birtthing、Xiaona Wang、PhysicalExamination；C++coding机试技巧
+- Others doing：DriveMethodDiscussion、Exercitation:ROS|AutomationInstitute、GraduationProject:VLN&ContactTeacher、LJLDating&Chating&Birtthing、Xiaona Wang、PhysicalExamination；C++coding机试技巧;github学生认证
 - [AppliedTech](#AppliedTech) reviewing：基本寻路算法（路径规划）、linux通信、计算机视觉与深度学习、激光slam、《视觉SLAM十四讲》、OpenGL、几何数学、相机成像和几何原理、《概率机器人》、《机器人学中的状态估计》、《计算机视觉中的多视图几何》、STM32、ardunino、（python、C++、Linux command、ROS）
 - [task](./task.md) making
 

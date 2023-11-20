@@ -83,7 +83,7 @@ cd demo
   git branch -m master main
   ```
 
-- 建立本地项目（分支）与github项目（分支）的连接，将之前的远程地址称为origin（你可以自定义）
+- 建立本地项目（分支）与github项目（分支）的连接，将之前的远程地址称为origin（你可以自定义）git 
 
   ```
   git remote add origin git@github.com:biglonglong/<project>.git

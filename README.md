@@ -53,16 +53,15 @@
 
 ## Projects
 
-- [MathModel](https://github.com/biglonglong/MathModel)
+- [PathPlan](https://github.com/biglonglong/PathPlan)
+- [ResearchSum](https://github.com/biglonglong/ResearchSum)
 
 
 
 ## Discussion
 
-- [**github**开发](./Discussion/github开发.md)
+- [**git**开发](./Discussion/git开发.md)
 - [**Linux**操作命令](./Discussion/Linux操作命令.md)
-- [**paper**阅读与汇报](./Discussion/paper阅读与汇报.md)
-
 - [**C++coding**机试技巧](./Discussion/C++coding机试技巧.md)
 
 
@@ -78,13 +77,4 @@
 
 
 
-## Marks
-
-- English memorizing：words、videos、articles
-- [Algorithm](#Algorithm) coding
-- Others doing：DriveMethodDiscussion、Exercitation:ROS|AutomationInstitute、GraduationProject:VLN&ContactTeacher、LJLDating&Chating&Birtthing、Xiaona Wang、PhysicalExamination；C++coding机试技巧;github学生认证
-- [AppliedTech](#AppliedTech) reviewing：基本寻路算法（路径规划）、linux通信、计算机视觉与深度学习、激光slam、《视觉SLAM十四讲》、OpenGL、几何数学、相机成像和几何原理、《概率机器人》、《机器人学中的状态估计》、《计算机视觉中的多视图几何》、STM32、ardunino、（python、C++、Linux command、ROS）
-- [task](./task.md) making
-
-
-
+## [Task](./task.md)

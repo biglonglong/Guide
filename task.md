@@ -1,4 +1,6 @@
-> 基本寻路算法（路径规划）、linux通信、计算机视觉与深度学习、激光slam、《视觉SLAM十四讲》、OpenGL、几何数学、相机成像和几何原理、《概率机器人》、《机器人学中的状态估计》、《计算机视觉中的多视图几何》、STM32、ardunino、（python、C++、Linux command、ROS）
+> ros1demo重构和整理、ros1实战智能车、国一项目复盘、ros global planner、VLN
+>
+> 百度网盘ToBeDone、基本寻路算法（路径规划）、linux通信、计算机视觉与深度学习、激光slam、《视觉SLAM十四讲》、OpenGL、几何数学、相机成像和几何原理、《概率机器人》、《机器人学中的状态估计》、《计算机视觉中的多视图几何》、STM32、ardunino、（python、C++、Linux command、ROS1、）
 
 
 

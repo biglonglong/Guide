@@ -54,7 +54,6 @@
 ## Projects
 
 - [PathPlan](https://github.com/biglonglong/PathPlan)
-- [ResearchSum](https://github.com/biglonglong/ResearchSum)
 
 
 
@@ -63,17 +62,6 @@
 - [**git**开发](./Discussion/git开发.md)
 - [**Linux**操作命令](./Discussion/Linux操作命令.md)
 - [**C++coding**机试技巧](./Discussion/C++coding机试技巧.md)
-
-
-
-## Tools
-
-- ppt模板
-
-- AutoEnterScript自动打字
-- auto-py-to-exe可视化打包
-- Clash网络代理：一元机场、wenpblog、*hosts ping*
-- AI大模型：文心一言(Baidu - biglonglong1)、copilot/bingchat(Microsoft - longlongbig2023)、githubcopilot(github - biglonglong)、chatgpt(Chrome - 2long.big)
 
 
 
